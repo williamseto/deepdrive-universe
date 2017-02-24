@@ -24,5 +24,5 @@ class GTANetModel(object):
         fc8 = linear(fc7, "fc8", num_targets)
 
         self.p = fc8
-        self.global_step = tf.get_variable("global_step", [], tf.int32, initializer=tf.zeros_initializer,
+        self.global_step = tf.get_variable("global_step", [], tf.int32, initializer=tf.zeros_initializer(),
                                            trainable=False)
